@@ -4,10 +4,10 @@ from decimal import Decimal, InvalidOperation
 class CoinChangeCalculator:
     def __init__(self):
         self.coins = [
-            '0.25',
-            '0.10',
-            '0.05',
-            '0.01'
+            '0.25',  # quarters
+            '0.10',  # dimes
+            '0.05',  # nickels
+            '0.01'   # pennies
         ]
         # using Decimal instead of float to avoid imposition problems
         self.coins = [Decimal(x) for x in self.coins]
