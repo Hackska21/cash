@@ -32,6 +32,11 @@ class CoinChangeCalculator:
     def get_minimum_coins_number(self, amount: 'Decimal'):
         """
             Gets the minimum coins using simplified method
+            Warning, if the amount is lower than the minimum coin it dont be considered
+            Ex:
+                amount = 0.001
+                output : 0
+
         :param amount:
         :return:
         """
