@@ -11,6 +11,7 @@ class CoinChangeCalculator:
         ]
         # using Decimal instead of float to avoid imposition problems
         self.coins = [Decimal(x) for x in self.coins]
+        # Coins are sorted by its value to use first the greater value
         self.coins.sort(reverse=True)
 
     def get_minimum_coins_number_brute(self, amount: 'Decimal'):
