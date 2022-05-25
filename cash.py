@@ -9,7 +9,7 @@ class CoinChangeCalculator:
             '0.05',  # nickels
             '0.01'   # pennies
         ]
-        # using Decimal instead of float to avoid imposition problems
+        # using Decimal instead of float to avoid impressions problems
         self.coins = [Decimal(x) for x in self.coins]
         # Coins are sorted by its value to use first the greater value
         self.coins.sort(reverse=True)
